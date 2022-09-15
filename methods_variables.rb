@@ -58,4 +58,16 @@ last_login.center(20, '!')
 
 
 
-# 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name. Show your understading by providing an example and writing an explanation.
+# 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name.
+#Show your understading by providing an example and writing an explanation.
+# Methods that use ! modify the existing object that called the method.
+# The following example will print:
+# "worl"
+# "world"
+# "worl"
+original_string = "world"
+new_string = original_string.chop
+p new_string
+p original_string
+original_string.chop!
+p original_string
